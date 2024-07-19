@@ -41,8 +41,8 @@ async def main():
         try:
             driver = await uc.start(
             headless = False,
-            browser_executable_path=r'C:\Users\Administrator\Desktop\Spotify-Viewer\Chrome\chrome.exe',
-            user_data_dir=f"C:\\Users\\Administrator\\Desktop\\Spotify-Viewer\\Users\\ConnorLinkedIn\\",
+            browser_executable_path=r'C:\Users\Administrator\Desktop\LinkedIn Follower Bot\Chrome\chrome.exe',
+            user_data_dir=f"C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\",
             browser_args=[
             f"--window-size={randint(500, 1920)},{randint(500, 1080)}",
             ]
