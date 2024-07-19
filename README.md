@@ -6,12 +6,18 @@
 
 Welcome to the **LinkedIn Follower Bot**! This Python script automates the process of following accounts on LinkedIn, designed to enhance your networking capabilities while ensuring the safety of your account. Build professional connections effortlessly and manage your LinkedIn presence with ease!
 
+[LinkedIn Follower Bot](https://github.com/Connor9994/LinkedIn-Follower-Bot)
+
 ### Key Features
 
 - **Automated Account Following**: Automatically follow potential connections based on your LinkedIn network growth.
 - **Weekly Limits**: Prevents exceeding a threshold (100 accounts) to avoid flags or restrictions from LinkedIn.
 - **Daily Execution Check**: Ensures the bot runs only once a day.
 - **Log Management**: Maintains logs of the accounts followed along with dates for easy tracking.
+- 
+### **NoDriver Instead of Selenium**
+Official successor of the Undetected-Chromedriver python package that does NOT use WebDriver 
+https://github.com/ultrafunkamsterdam/nodriver
 
 ## ⚙️ Requirements
 
