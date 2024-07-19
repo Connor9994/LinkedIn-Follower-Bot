@@ -7,6 +7,7 @@ from nodriver import *
 
 browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Chrome\\chrome.exe'
 profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\'
+LoggedIn = 0
 
 async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -40,6 +41,7 @@ async def main():
                 print("Current date: " + current_date + " is already in the log file.")
                 print("Total Accounts This Week: " + str(total_accounts))
     
+    Skip = 0
     if (not Skip):
         try:
             driver = await uc.start(
@@ -52,37 +54,34 @@ async def main():
             )
 
             tab = await driver.get("https://www.linkedin.com/mynetwork/grow/")
-            await driver.wait(time=random()) # Wait
-            bottomFrame = await tab.select("#humanThirdPartyIframe")
-            y=0
-            while y < 10:
-                await bottomFrame.scroll_into_view()
-                time.sleep(1)
-                y += 1
+            if (LoggedIn):
+                await driver.wait(time=random()) # Wait
+                bottomFrame = await tab.select("#humanThirdPartyIframe")
+                y=0
+                while y < 10:
+                    await bottomFrame.scroll_into_view()
+                    time.sleep(1)
+                    y += 1
 
-            x = 0
-            connectBars = await tab.find_all("to connect",timeout=25)
-            for bar in connectBars:
-                if (x >= 25):
-                    break
-                else:
-                    await bar.scroll_into_view()
-                    #hrefLink = bar.parent.parent.parent.children[2].children[0].href
-                    #tab2 = await driver.get(hrefLink,new_tab=True)
-                    #connectBar = await tab2.find_all("to connect",timeout=25)
-                    #await connectBar.click()
-                    #addANote = await tab2.find_all("Add a note",timeout=25)
-                    #await addANote.click()
-                    await bar.click()
-                    time.sleep(2+5*random())
-                    x += 1
-                   
-            # Log this message into a text file
-            with open('AccountLog.txt', 'a') as log_file:  # Append mode
-                log_file.write(f"Accounts ran: {x} on {current_date}\n")
+                x = 0
+                connectBars = await tab.find_all("to connect",timeout=25)
+                for bar in connectBars:
+                    if (x >= 25):
+                        break
+                    else:
+                        await bar.scroll_into_view()
+                        await bar.click()
+                        time.sleep(2+5*random())
+                        x += 1
+                    
+                # Log this message into a text file
+                with open('AccountLog.txt', 'a') as log_file:  # Append mode
+                    log_file.write(f"Accounts ran: {x} on {current_date}\n")
 
-            #input("Press Enter to continue...")
-            await tab.close()
+                await tab.close()
+            else:
+                input("Press Enter to continue...")
+                await tab.close()
         except Exception as e:
             print(e)
             await tab.close()
