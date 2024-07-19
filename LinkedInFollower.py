@@ -5,11 +5,14 @@ import datetime
 import nodriver as uc
 from nodriver import *
 
+browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Chrome\\chrome.exe'
+profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\'
+
 async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     total_accounts = 0
     Skip = 0
-    with open("LinkedInAccountLog.txt", 'r') as log_file:
+    with open("AccountLog.txt", 'r') as log_file:
         for line in log_file:
             # Split the line to extract accounts and date
             parts = line.strip().split(" on ")
@@ -30,7 +33,7 @@ async def main():
         Skip = 1
 
      # If Already Ran today, Skip
-    with open("LinkedInAccountLog.txt", 'r') as log_file:
+    with open("AccountLog.txt", 'r') as log_file:
         for line in log_file:
             if current_date in line:
                 Skip = 1
@@ -41,8 +44,8 @@ async def main():
         try:
             driver = await uc.start(
             headless = False,
-            browser_executable_path=r'C:\Users\Administrator\Desktop\LinkedIn Follower Bot\Chrome\chrome.exe',
-            user_data_dir=f"C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\",
+            browser_executable_path=browserPath,
+            user_data_dir=profilePath,
             browser_args=[
             f"--window-size={randint(500, 1920)},{randint(500, 1080)}",
             ]
@@ -75,7 +78,7 @@ async def main():
                     x += 1
                    
             # Log this message into a text file
-            with open('LinkedInAccountLog.txt', 'a') as log_file:  # Append mode
+            with open('AccountLog.txt', 'a') as log_file:  # Append mode
                 log_file.write(f"Accounts ran: {x} on {current_date}\n")
 
             #input("Press Enter to continue...")
