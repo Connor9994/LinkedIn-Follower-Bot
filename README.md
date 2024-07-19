@@ -53,30 +53,39 @@ pip install -r requirements.txt
    profilePath = Where you want to save your LinkedIn User Data
    (Eg. C:\Users\Administrator\Desktop\LinkedIn Follower Bot\Users\LinkedIn)
 
-   LoggedIn = (1 - Logged In / 0 - Logged Out)
-   Run Script w/ 0, log in to LinkedIn, press enter to save the Cookies/Etc to profilePath
-   Change LoggedIn to 1
+   LoggedIn = (1 Logged In / 0 Logged Out)
    ```
 
-4. Run the script:
+4. Run the script with LoggedIn = 0:
+   
+   (Press Enter To Save Credentials to profilePath)
 
+   ```bash
+   python LinkedInFollower.py
+   ```
+6. Run the script with LoggedIn = 1:
    ```bash
    python LinkedInFollower.py
    ```
 
 ## 📜 Usage
 
-The script will read from `AccountLog.txt` to check prior follow activity and will execute the follow actions accordingly. The following sequence occurs:
+The script will read from `AccountLog.txt` to check prior follow activity and will execute the follow actions accordingly:
 
-1. Checks if the bot has run today or if the weekly following limit has been reached.
-2. Launches Chrome.
-3. Scrolls through the LinkedIn network page to find accounts to follow.
-4. Follows accounts dynamically until the limit is reached.
-5. Logs the activity/date in `AccountLog.txt`.
+1. Checks if the bot has run today, or if the weekly following limit has been reached
+2. Launches Chrome
+3. Scrolls through the LinkedIn network page to find accounts to follow
+   - (From "People you may know based on your recent activity")
+5. Follows the accounts dynamically until the 25-person limit is reached
+6. Logs the activity/date in `AccountLog.txt`
 
 ## 🚧 Disclaimer
 
-Use this bot responsibly. Automation goes against the Terms of Service of LinkedIn, and excessive use will result in account restrictions. Always ensure to adhere to LinkedIn guidelines. This is for educational purposes only!
+Use this bot responsibly. Automation goes against the Terms of Service of LinkedIn, and excessive use will result in account restrictions. 
+
+Always ensure to adhere to LinkedIn guidelines. 
+
+This is for educational purposes only!
 
 ## 📧 Contributing
 
