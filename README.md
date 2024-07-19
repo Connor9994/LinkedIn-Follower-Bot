@@ -51,24 +51,16 @@ pip install -r requirements.txt
 
 The script will read from `AccountLog.txt` to check prior follow activity and will execute the follow actions accordingly. The following sequence occurs:
 
-1. Checks if the bot has run today or if the weekly following limit is reached.
-2. Launches Chrome in headless mode.
+1. Checks if the bot has run today or if the weekly following limit has been reached.
+2. Launches Chrome.
 3. Scrolls through the LinkedIn network page to find accounts to follow.
-4. Follows accounts dynamically until the limit is reached or all accounts are processed for the session.
-5. Logs the activity in `AccountLog.txt`.
+4. Follows accounts dynamically until the limit is reached.
+5. Logs the activity/date in `AccountLog.txt`.
 
 ## 🚧 Disclaimer
 
-Use this bot responsibly. Automation might go against the Terms of Service of LinkedIn, and excessive use may result in account restrictions. Always ensure to adhere to LinkedIn guidelines and use for educational purposes only!
+Use this bot responsibly. Automation goes against the Terms of Service of LinkedIn, and excessive use will result in account restrictions. Always ensure to adhere to LinkedIn guidelines. This is for educational purposes only!
 
 ## 📧 Contributing
 
 Contributions are welcome! Feel free to open issues or pull requests to improve the script, enhance features, or fix bugs.
-
-## 💡 Inspiration
-
-This bot was inspired by the desire to maximize professional networking opportunities while simplifying the tedious task of manual account following.
-
----
-
-For any questions or support, please reach out or create an issue in the repository. Happy connecting! 🎉
