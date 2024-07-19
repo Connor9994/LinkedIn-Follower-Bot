@@ -1,4 +1,4 @@
-# LinkedIn Follower Bot
+# <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20"> LinkedIn Follower Bot <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20"> 
 
 ![GitHub stars](https://img.shields.io/github/stars/Connor9994/LinkedIn-Follower-Bot?style=social) ![GitHub forks](https://img.shields.io/github/forks/Connor9994/LinkedIn-Follower-Bot?style=social) ![GitHub issues](https://img.shields.io/github/issues/Connor9994/LinkedIn-Follower-Bot) 
 
@@ -14,7 +14,7 @@ Welcome to the **LinkedIn Follower Bot**! This Python script automates the proce
 - **Weekly Limits**: Prevents exceeding a threshold (100 accounts) to avoid flags or restrictions from LinkedIn.
 - **Daily Execution Check**: Ensures the bot runs only once a day.
 - **Log Management**: Maintains logs of the accounts followed along with dates for easy tracking.
-- 
+
 ### **NoDriver Instead of Selenium**
 Official successor of the Undetected-Chromedriver python package that does NOT use WebDriver 
 https://github.com/ultrafunkamsterdam/nodriver
