@@ -46,6 +46,10 @@ pip install -r requirements.txt
    
    profilePath = Where you want to save your LinkedIn User Data
    (Eg. C:\Users\Administrator\Desktop\LinkedIn Follower Bot\Users\LinkedIn)
+
+   LoggedIn = (1 - Logged In / 0 - Logged Out)
+   Run Script w/ 0, log in to LinkedIn, press enter to save the Cookies/Etc to profilePath
+   Change LoggedIn to 1
    ```
 
 4. Run the script:
