@@ -21,12 +21,6 @@ Make sure you have Python installed, then install the required library by runnin
 pip install -r requirements.txt
 ```
 
-Contents of `requirements.txt`:
-
-```
-nodriver==0.34
-```
-
 ## 🛠 Getting Started
 
 ### Prerequisites
@@ -50,7 +44,7 @@ nodriver==0.34
 3. Run the script:
 
    ```bash
-   python -m your_script_name
+   python LinkedInFollower.py
    ```
 
 ## 📜 Usage
