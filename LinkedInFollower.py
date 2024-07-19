@@ -41,7 +41,6 @@ async def main():
                 print("Current date: " + current_date + " is already in the log file.")
                 print("Total Accounts This Week: " + str(total_accounts))
     
-    Skip = 0
     if (not Skip):
         try:
             driver = await uc.start(
