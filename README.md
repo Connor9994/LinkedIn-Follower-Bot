@@ -49,13 +49,13 @@ pip install -r requirements.txt
 
 ## 📜 Usage
 
-The script will read from `LinkedInAccountLog.txt` to check prior follow activity and will execute the follow actions accordingly. The following sequence occurs:
+The script will read from `AccountLog.txt` to check prior follow activity and will execute the follow actions accordingly. The following sequence occurs:
 
 1. Checks if the bot has run today or if the weekly following limit is reached.
 2. Launches Chrome in headless mode.
 3. Scrolls through the LinkedIn network page to find accounts to follow.
 4. Follows accounts dynamically until the limit is reached or all accounts are processed for the session.
-5. Logs the activity in `LinkedInAccountLog.txt`.
+5. Logs the activity in `AccountLog.txt`.
 
 ## 🚧 Disclaimer
 
