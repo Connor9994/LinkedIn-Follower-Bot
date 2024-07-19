@@ -41,7 +41,11 @@ pip install -r requirements.txt
 
 2. Modify the paths in the script as necessary for your system.
    ```
-   Set browserPath to your Chrome Directory (Windows: C:\Program Files\Google\Chrome\Application\chrome.exe
+   browserPath = Your Chrome Directory
+   (Windows: C:\Program Files\Google\Chrome\Application\chrome.exe)
+   
+   profilePath = Where you want to save your LinkedIn User Data
+   (Eg. C:\Users\Administrator\Desktop\LinkedIn Follower Bot\Users\LinkedIn)
    ```
 
 4. Run the script:
