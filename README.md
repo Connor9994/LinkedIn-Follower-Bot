@@ -35,13 +35,16 @@ pip install -r requirements.txt
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/LinkedIn-Follower-Bot.git
+   git clone https://github.com/Connor9994/LinkedIn-Follower-Bot.git
    cd LinkedIn-Follower-Bot
    ```
 
 2. Modify the paths in the script as necessary for your system.
+   ```
+   Set browserPath to your Chrome Directory (Windows: C:\Program Files\Google\Chrome\Application\chrome.exe
+   ```
 
-3. Run the script:
+4. Run the script:
 
    ```bash
    python LinkedInFollower.py
