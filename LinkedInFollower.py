@@ -7,7 +7,7 @@ from nodriver import *
 
 browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Chrome\\chrome.exe'
 profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\'
-LoggedIn = 0
+LoggedIn = 1
 
 async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -69,7 +69,7 @@ async def main():
                         break
                     else:
                         await bar.scroll_into_view()
-                        await bar.click()
+                        #await bar.click()
                         time.sleep(2+5*random())
                         x += 1
                     
@@ -83,6 +83,10 @@ async def main():
                 await tab.close()
         except Exception as e:
             print(e)
+            # Log this message into a text file (Error encountered, still record followed Accounts)
+            if (x>0):
+                with open('AccountLog.txt', 'a') as log_file:  # Append mode
+                    log_file.write(f"Accounts ran: {x} on {current_date}\n")
             await tab.close()
 
 if __name__ == "__main__":
