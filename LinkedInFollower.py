@@ -42,6 +42,8 @@ async def main():
                 print("Total Accounts This Week: " + str(total_accounts))
     
     if (not Skip):
+        x = 0
+        y = 0
         try:
             driver = await uc.start(
             headless = False,
@@ -56,13 +58,11 @@ async def main():
             if (LoggedIn):
                 await driver.wait(time=random()) # Wait
                 bottomFrame = await tab.select("#humanThirdPartyIframe")
-                y=0
                 while y < 10:
                     await bottomFrame.scroll_into_view()
                     time.sleep(1)
                     y += 1
 
-                x = 0
                 connectBars = await tab.find_all("to connect",timeout=25)
                 for bar in connectBars:
                     if (x >= 25):
