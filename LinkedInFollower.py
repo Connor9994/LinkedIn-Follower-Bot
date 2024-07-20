@@ -17,17 +17,16 @@ async def main():
         for line in log_file:
             # Split the line to extract accounts and date
             parts = line.strip().split(" on ")
-            if len(parts) == 2:
-                accounts_part = parts[0]
-                date_part = parts[1]
-                
-                # Extract the number of accounts and the date
-                accounts_count = int(accounts_part.split(": ")[1])  # Extract number of accounts
-                log_date = datetime.datetime.strptime(date_part, '%Y-%m-%d')
+            accounts_part = parts[0]
+            date_part = parts[1]
+            
+            # Extract the number of accounts and the date
+            accounts_count = int(accounts_part.split(": ")[1])  # Extract number of accounts
+            log_date = datetime.datetime.strptime(date_part, '%Y-%m-%d')
 
-                # Check if the log date is within the last 7 days
-                if log_date >= datetime.datetime.now()-datetime.timedelta(days=7):
-                    total_accounts += accounts_count
+            # Check if the log date is within the last 7 days
+            if log_date >= datetime.datetime.now()-datetime.timedelta(days=7):
+                total_accounts += accounts_count
     
     # If More than 100 Accounts This Week, Skip
     if (total_accounts > 100):
