@@ -62,7 +62,7 @@ async def main():
                     time.sleep(1)
                     y += 1
 
-                connectBars = await tab.find_all("to connect",timeout=25)
+                connectBars = await tab.select_all(".artdeco-button.artdeco-button--2.artdeco-button--secondary.ember-view.full-width",timeout=25)
                 for bar in connectBars:
                     if (x >= 25):
                         break
