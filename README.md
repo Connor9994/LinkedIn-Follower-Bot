@@ -24,7 +24,7 @@ https://github.com/ultrafunkamsterdam/nodriver
 Make sure you have Python installed, then install the required library by running:
 
 ```bash
-pip install -r requirements.txt
+pip install nodriver
 ```
 
 ## 🛠 Getting Started
