@@ -5,9 +5,9 @@ import datetime
 import nodriver as uc
 from nodriver import *
 
-browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Chrome\\chrome.exe'
-profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\'
-LoggedIn = 1
+browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn-Follower-Bot\\Chrome\\chrome.exe'
+profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn-Follower-Bot\\Users\\LinkedIn\\'
+LoggedIn = 0
 
 async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
