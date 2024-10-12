@@ -7,7 +7,7 @@ from nodriver import *
 
 browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Chrome\\chrome.exe'
 profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\'
-LoggedIn = 1
+LoggedIn = 0
 
 async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -56,7 +56,7 @@ async def main():
             tab = await driver.get("https://www.linkedin.com/mynetwork/grow/")
             if (LoggedIn):
                 await driver.wait(time=random()) # Wait
-                bottomFrame = await tab.select("#humanThirdPartyIframe")
+                bottomFrame = await tab.select(".cnuthtao")
                 while y < 10:
                     await bottomFrame.scroll_into_view()
                     time.sleep(1)
