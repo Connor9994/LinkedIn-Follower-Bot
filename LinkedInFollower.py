@@ -5,8 +5,8 @@ import datetime
 import nodriver as uc
 from nodriver import *
 
-browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Chrome\\chrome.exe'
-profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn\\'
+browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn-Follower-Bot\\Chrome\\chrome.exe'
+profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn-Follower-Bot\\Users\\LinkedIn\\'
 LoggedIn = 0
 
 async def main():
@@ -29,8 +29,9 @@ async def main():
                 total_accounts += accounts_count
     
     # If More than 100 Accounts This Week, Skip
-    if (total_accounts > 100):
+    if (total_accounts >= 100):
         Skip = 1
+        print("Total Accounts This Week: " + str(total_accounts))
 
      # If Already Ran today, Skip
     with open("AccountLog.txt", 'r') as log_file:
