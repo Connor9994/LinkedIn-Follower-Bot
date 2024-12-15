@@ -57,7 +57,7 @@ async def main():
             tab = await driver.get("https://www.linkedin.com/mynetwork/grow/")
             if (LoggedIn):
                 await driver.wait(time=random()) # Wait
-                bottomFrame = await tab.select(".artdeco-card")
+                bottomFrame = await tab.find("People you may know",timeout=25)
                 while y < 10:
                     await bottomFrame.scroll_into_view()
                     time.sleep(1)
