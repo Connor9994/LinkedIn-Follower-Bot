@@ -15,9 +15,8 @@ Welcome to the **LinkedIn Follower Bot**! This Python script automates the proce
 - **Daily Execution Check**: Ensures the bot runs only once a day.
 - **Log Management**: Maintains a log of the dates of each 25-account interval for easy tracking.
 
-### **NoDriver Instead of Selenium**
-Official successor of the Undetected-Chromedriver python package that does NOT use WebDriver 
-https://github.com/ultrafunkamsterdam/nodriver
+### **[NoDriver](https://github.com/ultrafunkamsterdam/nodriver) Instead of Selenium**
+Official successor of the Undetected-Chromedriver python package that does NOT use WebDriver
 
 ## ⚙️ Requirements
 
@@ -32,7 +31,7 @@ pip install nodriver
 ### Prerequisites
 
 - Python 3.6 or higher
-- Chrome Browser
+- Chrome/Chromium Browser
 - LinkedIn Account
 - Proper setup of paths in the script
 
@@ -45,10 +44,12 @@ pip install nodriver
    cd LinkedIn-Follower-Bot
    ```
 
-2. Modify the paths in the script as necessary for your system.
+2. Modify the paths in the script as necessary for your system. 
    ```
    browserPath = Your Chrome Directory
    (Windows: C:\Program Files\Google\Chrome\Application\chrome.exe)
+   (Depending on your IDE, you may want to make a copy outside of any administration folders)
+   (We started using a chromium download in the local directory to avoid any issues)
    
    profilePath = Where you want to save your LinkedIn User Data
    (Eg. C:\Users\Administrator\Desktop\LinkedIn Follower Bot\Users\LinkedIn)
