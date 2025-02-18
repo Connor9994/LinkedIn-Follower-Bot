@@ -31,18 +31,23 @@ def mainOS(stdscr):
     stdscr.addstr(0, 0, f"You Selected: {options[current_index]}")
     stdscr.refresh()
     stdscr.getch()
+    return current_index
 
 
 def list_scripts():
     return [f for f in os.listdir(SCRIPTS_DIR) if f.endswith(".py")]
 
 
-def run_script(script_name):
+def run_script(script_name, os_index):
     script_path = os.path.join(SCRIPTS_DIR, script_name)
-    subprocess.run(["python", script_path])
+    if os_index == 0:
+        subprocess.run(["python", script_path, str(os_index_global)])
+    else:
+        subprocess.run(["python3", script_path, str(os_index_global)])
 
 
 def main(stdscr):
+    global os_index_global
     curses.curs_set(0)
     scripts = list_scripts()
     if not scripts:
@@ -69,7 +74,7 @@ def main(stdscr):
             stdscr.clear()
             stdscr.addstr(0, 0, f"Running {scripts[current_index]}...")
             stdscr.refresh()
-            run_script(scripts[current_index])
+            run_script(scripts[current_index], os_index_global)
             stdscr.addstr(2, 0, "Script executed. Press any key to return to the menu.")
             stdscr.refresh()
             stdscr.getch()
@@ -78,5 +83,6 @@ def main(stdscr):
 
 
 if __name__ == "__main__":
-    curses.wrapper(mainOS)
-    curses.wrapper(main)
+    os_index_global = curses.wrapper(mainOS)
+    if os_index_global is not None:
+        curses.wrapper(main)
