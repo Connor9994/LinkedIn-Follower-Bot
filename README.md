@@ -1,11 +1,16 @@
 
 # <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20"> TUI - LinkedIn Followers Bot <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20">
 
-![GitHub stars](https://img.shields.io/github/stars/capi-nemoo/LinkedIn-Follower-Bot?style=social) ![GitHub forks](https://img.shields.io/github/forks/capi-nemoo/LinkedIn-Follower-Bot?style=social) ![GitHub issues](https://img.shields.io/github/issues/capi-nemoo/LinkedIn-Follower-Bot)
+![GitHub stars](https://img.shields.io/github/stars/capi-nemoo/LinkedIn-Bot-Followers?style=social) ![GitHub forks](https://img.shields.io/github/forks/capi-nemoo/LinkedIn-Bot-Followers?style=social) ![GitHub issues](https://img.shields.io/github/issues/capi-nemoo/LinkedIn-Bot-Followers)
 
-## 🚀 Overview
+## 🚀 This fork now features full Linux support and a user-friendly Terminal User Interface (TUI) for easier configuration and execution! 🚀
 
-Welcome to the **LinkedIn Follower Bot** project! This tool automates the process of following LinkedIn accounts, helping you grow your professional network with ease. The project includes a Terminal User Interface (TUI) that lets you configure key parameters before launching the appropriate bot script for your operating system.
+## Overview
+
+
+Welcome to the **LinkedIn  Bot Follower** project! This tool automates the process of following LinkedIn accounts, helping you grow your professional network with ease. The project includes a Terminal User Interface (TUI) that lets you configure key parameters before launching the appropriate bot script for your operating system.
+
+![2025-02-1805-15-57-ezgif com-resize](https://github.com/user-attachments/assets/7775fdbc-f1ce-4b4c-9011-631319ceed71)
 
 This repository contains:
 
@@ -41,8 +46,8 @@ pip install nodriver
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/capi-nemoo/LinkedIn-Followers-Bot
-   cd LinkedIn-Follower-Bot
+   git clone https://github.com/capi-nemoo/LinkedIn-bot-Followers
+   cd LinkedIn-bot-Followers
    ```
 
 2. Review and, if needed, modify the default paths in the bot scripts:
@@ -87,9 +92,15 @@ Automation on LinkedIn can violate its Terms of Service and may lead to account 
 ## 📧 Contributing
 
 Contributions are welcome! If you have improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.
+Specials Thanks to
 
----
+If you enjoy this project, please consider giving it a star ⭐! Every star helps spread the word and motivates me to keep improving the project. 
 
+A special thanks to [Connor9994](https://github.com/Connor9994/LinkedIn-Follower-Bot), the maintainer of the original project.
+
+```
 Enjoy automating your network growth responsibly with the LinkedIn Follower Bot!
 
 ```
+
+
