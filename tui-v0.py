@@ -5,7 +5,7 @@ import subprocess
 SCRIPTS_DIR = "./scripts"
 
 
-def which_os(stdscr):
+def mainOS(stdscr):
     curses.curs_set(0)
     options = ["Windows", "Linux7w7"]
     current_index = 0
@@ -19,21 +19,18 @@ def which_os(stdscr):
                 stdscr.addstr(i + 2, 0, option)
         stdscr.refresh()
         key = stdscr.getch()
-        if key == curses.KEY_UP and current > 0:
-            current -=1
-        elif key == curses.KEY_DOWN and current < len(options) - 1:
-            current +=1
-        elif key in [10,13]:
+        if key == curses.KEY_UP and current_index > 0:
+            current_index -= 1
+        elif key == curses.KEY_DOWN and current_index < len(options) - 1:
+            current_index += 1
+        elif key in [10, 13]:
             break
-        elif key == ord('q')
+        elif key == ord("q"):
             return
     stdscr.clear()
     stdscr.addstr(0, 0, f"You Selected: {options[current_index]}")
     stdscr.refresh()
     stdscr.getch()
-
-if __name__ == "__main__":
-    curses.wrapper(main)
 
 
 def list_scripts():
@@ -81,4 +78,5 @@ def main(stdscr):
 
 
 if __name__ == "__main__":
+    curses.wrapper(mainOS)
     curses.wrapper(main)
