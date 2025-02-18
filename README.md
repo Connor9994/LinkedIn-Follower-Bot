@@ -9,7 +9,7 @@ Welcome to the **LinkedIn Follower Bot** project! This tool automates the proces
 
 This repository contains:
 
-- **TUI Script (`tui-v0.py`)**: A user-friendly interface to select your OS and enter required configuration values.
+- **TUI Script (`TUI-bot_Launcher.py`)**: A user-friendly interface to select your OS and enter required configuration values.
 - **Bot Scripts**:
   - `botlinkdinW.py` for Windows
   - `botlinkdinL.py` for Linux
@@ -57,7 +57,7 @@ pip install nodriver
 Launch the TUI script with:
 
 ```bash
-python 
+python TUI-bot_Launcher.py
 ```
 
 The TUI will prompt you to:
