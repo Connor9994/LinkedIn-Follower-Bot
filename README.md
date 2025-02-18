@@ -1,9 +1,7 @@
-Below is an example README.md that you can use for your GitHub profile. This version includes information about the TUI interface that configures and launches the appropriate bot script (Windows or Linux), as well as instructions on how to set up your custom Chrome executable path, profile path, and login state.
 
-````markdown
-# <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20"> LinkedIn Follower Bot <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20">
+# <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20"> TUI - LinkedIn Followers Bot <img src="https://github.com/user-attachments/assets/9115aa71-ea52-4fb3-b629-b1a1b5833515" width="20" height="20">
 
-![GitHub stars](https://img.shields.io/github/stars/YourUsername/LinkedIn-Follower-Bot?style=social) ![GitHub forks](https://img.shields.io/github/forks/YourUsername/LinkedIn-Follower-Bot?style=social) ![GitHub issues](https://img.shields.io/github/issues/YourUsername/LinkedIn-Follower-Bot)
+![GitHub stars](https://img.shields.io/github/stars/capi-nemoo/LinkedIn-Follower-Bot?style=social) ![GitHub forks](https://img.shields.io/github/forks/capi-nemoo/LinkedIn-Follower-Bot?style=social) ![GitHub issues](https://img.shields.io/github/issues/capi-nemoo/LinkedIn-Follower-Bot)
 
 ## 🚀 Overview
 
@@ -36,14 +34,14 @@ Install the required library using:
 ```bash
 pip install nodriver
 ```
-````
+
 
 ## 🛠 Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YourUsername/LinkedIn-Follower-Bot.git
+   git clone https://github.com/capi-nemoo/LinkedIn-Followers-Bot
    cd LinkedIn-Follower-Bot
    ```
 
@@ -59,7 +57,7 @@ pip install nodriver
 Launch the TUI script with:
 
 ```bash
-python tui-v0.py
+python 
 ```
 
 The TUI will prompt you to:
@@ -94,7 +92,4 @@ Contributions are welcome! If you have improvements, bug fixes, or new features,
 
 Enjoy automating your network growth responsibly with the LinkedIn Follower Bot!
 
-```
-
-Simply update any placeholders (like `YourUsername`) as needed, and this README should serve as a comprehensive guide to set up and use your project.
 ```
