@@ -102,5 +102,14 @@ A special thanks to [Connor9994](https://github.com/Connor9994/LinkedIn-Follower
 Enjoy automating your network growth responsibly with the LinkedIn Follower Bot!
 
 ```
+## Star History
+
+<a href="https://star-history.com/#Capi-nemoo/LinkedIn-Bot-Followers&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Capi-nemoo/LinkedIn-Bot-Followers&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Capi-nemoo/LinkedIn-Bot-Followers&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Capi-nemoo/LinkedIn-Bot-Followers&type=Date" />
+ </picture>
+</a>
 
 
