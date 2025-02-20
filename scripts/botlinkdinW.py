@@ -1,13 +1,22 @@
-from random import *
-import time
 import datetime
+import random
+import sys
+import time
+from random import *
 
+import import
 import nodriver as uc
+import randit
 from nodriver import *
 
-browserPath='C:\\Users\\Administrator\\Desktop\\LinkedIn-Follower-Bot\\Chrome\\chrome.exe'
-profilePath='C:\\Users\\Administrator\\Desktop\\LinkedIn-Follower-Bot\\Users\\LinkedIn\\'
-LoggedIn = 1
+if len(sys.argv) > 3:
+    browserPath = sys.argv[1]
+    profilePath = sys.argv[2]
+    LoggedIn = int(sys.argv[3])
+else:
+    browserPath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    profilePath = "C:\\Users\\Administrator\\Desktop\\LinkedIn Follower Bot\\Users\\LinkedIn"
+    LoggedIn = 1
 
 async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
