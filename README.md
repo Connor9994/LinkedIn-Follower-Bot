@@ -2,6 +2,9 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/Connor9994/LinkedIn-Follower-Bot?style=social) ![GitHub forks](https://img.shields.io/github/forks/Connor9994/LinkedIn-Follower-Bot?style=social) ![GitHub issues](https://img.shields.io/github/issues/Connor9994/LinkedIn-Follower-Bot) 
 
+#### 03/01/2025
+Special thanks to [Capi-nemoo](https://github.com/Capi-nemoo) for creating the [Linux branch](https://github.com/Connor9994/LinkedIn-Follower-Bot/tree/Linux-Flavor) of this utility. It has a user-friendly Terminal Interface that works on both Linux and Windows. 
+
 ## 🚀 Overview
 
 Welcome to the **LinkedIn Follower Bot**! This Python script automates the process of following accounts on LinkedIn, designed to enhance your networking capabilities while ensuring the safety of your account. Build professional connections effortlessly and manage your LinkedIn presence with ease!
