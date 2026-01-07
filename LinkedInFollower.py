@@ -13,7 +13,7 @@ async def main():
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     total_accounts = 0
     Skip = 0
-    with open("AccountLog.txt", 'r') as log_file:
+    with open("AccountLog.txt", 'r+') as log_file:
         for line in log_file:
             # Split the line to extract accounts and date
             parts = line.strip().split(" on ")
@@ -57,13 +57,16 @@ async def main():
             tab = await driver.get("https://www.linkedin.com/mynetwork/grow/")
             if (LoggedIn):
                 await driver.wait(time=random()) # Wait
-                bottomFrame = await tab.find("People you may know",timeout=25)
+                loadMore = await tab.find("Load More",timeout=25)
                 while y < 10:
-                    await bottomFrame.scroll_into_view()
+                    await loadMore.scroll_into_view()
                     time.sleep(1)
                     y += 1
 
                 connectBars = await tab.find_all("to connect",timeout=25)
+                if len(connectBars) <= 25:
+                    await loadMore.click()
+                    connectBars = await tab.find_all("to connect",timeout=25)
                 for bar in connectBars:
                     if (x >= 25):
                         break
@@ -88,6 +91,7 @@ async def main():
                 with open('AccountLog.txt', 'a') as log_file:  # Append mode
                     log_file.write(f"Accounts ran: {x} on {current_date}\n")
             await tab.close()
+
 
 if __name__ == "__main__":
     uc.loop().run_until_complete(main())
