@@ -63,11 +63,11 @@ async def main():
                     time.sleep(1)
                     y += 1
 
-                connectBars = await tab.find_all("to connect",timeout=25)
+                connectBars = await tab.find_all("invite",timeout=25)
                 if len(connectBars) <= 25:
                     await loadMore.click()
                     time.sleep(1)
-                    connectBars = await tab.find_all("to connect",timeout=25)
+                    connectBars = await tab.find_all("invite",timeout=25)
                 for bar in connectBars:
                     if (x >= 25):
                         break
