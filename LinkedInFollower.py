@@ -57,15 +57,18 @@ async def main():
             tab = await driver.get("https://www.linkedin.com/mynetwork/grow/")
             if (LoggedIn):
                 await driver.wait(time=random()) # Wait
-                loadMore = await tab.find("Load More",timeout=25)
-                while y < 10:
-                    await loadMore.scroll_into_view()
-                    time.sleep(1)
-                    y += 1
+                loadMore = await tab.find_all("Load More",timeout=25)
+                for item in loadMore:
+                    if item.tag == "span":
+                        loadMoreButton = item
+                #while y < 10:
+                #    await loadMoreButton.scroll_into_view()
+                #    time.sleep(1)
+                #    y += 1
 
                 connectBars = await tab.find_all("invite",timeout=25)
                 if len(connectBars) <= 25:
-                    await loadMore.click()
+                    await loadMoreButton.click()
                     time.sleep(1)
                     connectBars = await tab.find_all("invite",timeout=25)
                 for bar in connectBars:
